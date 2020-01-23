@@ -14,17 +14,17 @@ We need ROS-Gazebo interface and controller packages:
 
 `sudo apt install ros-<distro>-gazebo-ros-pkgs ros-<distro>-gazebo-ros-control ros-<distro>-ros-controllers` 
 
-**After git clone please change the name of the directory** `mv ROS-Gazebo-Simulation exoskeleton`
+copy the `walktoy` to `~/catkin_ws/src`. Details at [ROS Website](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment#Creat-a-ROS-Worksapce)
 
 ### Launch the Simulation
 
-Launch the exoskeleton model:
+Launch the walktoy model:
 
-`roslaunch exoskeleton world.launch paused:=true`
+`roslaunch walktoy world.launch paused:=true`
 
 Launch the `rqt_gui` for control and tuning parameter:
 
-`roslaunch exoskeleton rqt.launch`
+`roslaunch walktoy rqt.launch`
 
 upper half for publish joint command.
 lower half for reconfigure joint controller PID parameters.
