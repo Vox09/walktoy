@@ -1,4 +1,4 @@
 <launch>
-    <node name="data_publisher" pkg="exoskeleton" type="data.py"/>
+    <node name="data_publisher" pkg="walktoy" type="data.py"/>
 </launch>
 

@@ -23,10 +23,10 @@ def data_RD(time):
 class data_publisher():
     def __init__(self):
         rospy.init_node("data_publisher")
-        self.pub_LU = rospy.Publisher('/exoskeleton/LU_position_controller/command',Float64, queue_size=10)
-        self.pub_RU = rospy.Publisher('/exoskeleton/RU_position_controller/command',Float64, queue_size=10)
-        self.pub_LD = rospy.Publisher('/exoskeleton/LD_position_controller/command',Float64, queue_size=10)
-        self.pub_RD = rospy.Publisher('/exoskeleton/RD_position_controller/command',Float64, queue_size=10)
+        self.pub_LU = rospy.Publisher('/walktoy/LU_position_controller/command',Float64, queue_size=10)
+        self.pub_RU = rospy.Publisher('/walktoy/RU_position_controller/command',Float64, queue_size=10)
+        self.pub_LD = rospy.Publisher('/walktoy/LD_position_controller/command',Float64, queue_size=10)
+        self.pub_RD = rospy.Publisher('/walktoy/RD_position_controller/command',Float64, queue_size=10)
         self.rate = rospy.Rate(100)
 
     def work(self):

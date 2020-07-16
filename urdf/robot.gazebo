@@ -3,9 +3,8 @@
   <!-- ros_control plugin -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/exoskeleton</robotNamespace>
-      <robotsimtype>gazebo_ros_control/defaultrobothwsim</robotsimtype>
-      <legacyModeNS>true</legacyModeNS>
+      <robotNamespace>/walktoy</robotNamespace>
+      <robotsimtype>gazebo_ros_control/DefaultRobotHWSim</robotsimtype>
     </plugin>
   </gazebo>
   
@@ -31,25 +30,8 @@
   <gazebo reference="RF_link">
     <material>Gazebo/Gold</material>
   </gazebo>
-  <gazebo reference="LFF_link">
-    <material>Gazebo/Orange</material>
-    <mu1>1.0</mu1>
-    <kp>100000</kp>
-  </gazebo>
-  <gazebo reference="RFF_link">
-    <material>Gazebo/Orange</material>
-    <mu1>1.0</mu1>
-    <kp>100000</kp>
-  </gazebo>
-      
-  <gazebo>
-    <plugin name="spring_joint" filename="libspring_joint.so">
-      <stiffness>100</stiffness>
-      <leftJoint>LFF_joint</leftJoint>
-      <rightJoint>RFF_joint</rightJoint>
-    </plugin>
-  </gazebo>
 
+      
   <!--<gazebo>-->
     <!--<plugin name="imu_plugin" filename="libgazebo_ros_imu.so">-->
       <!--<alwaysOn>true</alwaysOn>-->

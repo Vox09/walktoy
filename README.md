@@ -46,7 +46,7 @@ Totally six joints:
 Joint position controller:
 
 ```
-/exoskeleton/LU_position_controller/command
+/walktoy/LU_position_controller/command
 ```
 
 Link IMU plug-in topic:
